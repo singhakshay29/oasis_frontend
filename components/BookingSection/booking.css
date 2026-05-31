@@ -1,0 +1,102 @@
+
+
+.bookingSection {
+    background: var(--background);
+    padding: 5rem ;
+  }
+  
+  .bookingContent {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  .bookingText h2 {
+    font-family: var(--font-cormorant);
+    color: #050b0c;
+    font-size: clamp(3rem, 8vw, 5rem);
+    line-height: 0.95;
+    font-weight: 500;
+  }
+  
+  .bookingText p {
+    margin-top: 1.5rem;
+    color: var(--gold);
+    letter-spacing: 0.2em;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  .bookingImage {
+    position: relative;
+  }
+  
+  .bookingImage img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .ornament {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+  
+    transform: translateX(-50%);
+  
+    color: var(--gold);
+    font-size: 4rem;
+  }
+  
+  .bookingAction button {
+    background: #050b0c;
+    color: white;
+  
+    border-radius: 999px;
+  
+    padding: 1rem 2rem;
+  
+    letter-spacing: 0.15em;
+  
+    font-size: 0.9rem;
+  
+    transition: 0.3s;
+  }
+  
+  .bookingAction button:hover {
+    transform: translateY(-2px);
+  }
+  
+  @media (min-width: 1024px) {
+    .bookingContent {
+      grid-template-columns: 1fr 1.4fr 1fr;
+      align-items: center;
+      gap: 4rem;
+    }
+  
+    .bookingText {
+      max-width: 320px;
+    }
+  
+    .bookingAction {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .bookingImage img {
+      height: 750px;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .bookingText {
+        max-width: 320px;
+      margin-bottom: 1rem;
+    }
+  
+    .bookingImage img {
+      height: 500px;
+    }
+  
+    .bookingAction {
+      margin-top: 1rem;
+    }
+  }
