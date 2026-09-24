@@ -11,7 +11,7 @@ const BookingSection = () => {
         </div>
 
         <div className='bookingImage'>
-          <Image src='/bookSec.png' width={100} height={100} alt='The Oasis Homestay' />
+          <Image src='/Room1.jpg'  width={800} height={1200} quality={100} alt='The Oasis Homestay' />
 
           <div className='ornament'>✦</div>
         </div>
